@@ -1,5 +1,5 @@
 {
-  "activejobs": [
+  "jobs": [
     {
       "id": "99ea",
       "title": "Frontend Developer",
@@ -237,7 +237,7 @@
       "company_twitter_X": "https://twitter.com/oppo"
     }
   ],
-  "register": [
+  "employee_register": [
     {
       "id": "9a83",
       "Emp_Id": "jas%854",
