@@ -1,0 +1,50 @@
+# Talent-Trek Backend
+
+This is the backend service for the **Talent-Trek** platform, built using `json-server` and deployed on **Render**. It serves essential RESTful API endpoints for managing employees, students, job postings, companies, and job applications.
+
+---
+
+## 📁 Endpoints Overview
+
+### `/activejobs`
+- Stores jobs posted by employees.
+- Used in the student job listing and application pages.
+
+### `/company`
+- Stores company details added by employees during registration.
+- Used in company dropdowns and company data management.
+
+### `/register`
+- Contains employee registration information.
+- Used for authentication and job posting.
+
+### `/student_register`
+- Holds student registration data.
+- Used for authentication,login and profile features.
+
+### `/application_data`
+- Stores job applications submitted by students.
+- Used in both student and employer dashboards.
+
+---
+
+## 🔁 Data Flow
+
+### For Employees:
+- Register via `/register`
+- Add/select company using `/company`
+- Post jobs to `/activejobs`
+
+### For Students:
+- Register via `/student_register`
+- View and apply to jobs from `/activejobs`
+- Applications are saved in `/application_data`
+
+---
+
+## 🚀 Deployment
+
+- Backend is deployed on [Render](https://render.com)
+- Powered by `json-server`
+- Example start command:
+  ``` "start": "json-server --watch db.json --port 3000"
